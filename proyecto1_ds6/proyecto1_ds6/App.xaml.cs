@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using proyecto1_ds6.View;
 
 namespace proyecto1_ds6
 {
@@ -10,7 +11,7 @@ namespace proyecto1_ds6
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
