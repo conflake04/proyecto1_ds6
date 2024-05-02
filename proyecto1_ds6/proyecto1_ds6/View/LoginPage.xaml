@@ -6,8 +6,23 @@
              BackgroundColor="#003C43"
              x:Class="proyecto1_ds6.View.LoginPage">
     
-        <StackLayout Padding="20,50,20,0" VerticalOptions="Center">
-         <Image Source="logo.png" />
-       </StackLayout>
-   
+    <StackLayout Padding="20,50,20,100" VerticalOptions="Start">
+       <Image WidthRequest="233" HeightRequest="181"  Source="logo.png" />
+        <Frame HasShadow="True" WidthRequest="298" HeightRequest="489" BackgroundColor="#51A887 " >
+            
+            <StackLayout  >
+                <Label Text="Bienvenido a Bluet" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold"  />
+                <StackLayout Padding="20,50,20,0" >
+                    <Entry Placeholder="Correo" BackgroundColor="#5F5F5F"  />
+                    <Entry Placeholder="Contraseña" BackgroundColor="#5F5F5F" TranslationY="30"  />
+                </StackLayout>
+                <Button x:Name="btn1"  Text="Login" FontSize="15" FontAttributes="Bold" CornerRadius="34" WidthRequest="172" HeightRequest="50" TranslationY="70" Clicked="btn1_Clicked"/>
+
+            </StackLayout>
+        </Frame>
+        
+    </StackLayout>
+
+    
+
 </ContentPage>

@@ -3,6 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto1_ds6.App">
     <Application.Resources>
-        
+        <Style TargetType="StackLayout" x:Key="mainBg">
+            <Setter Property="BackgroundColor" Value="#202020" />
+        </Style>
+
+        <Style TargetType="Frame" x:Key="mainBgBorder" >
+            <Setter Property="BackgroundColor" Value="Gray" />
+        </Style>
     </Application.Resources>
 </Application>
