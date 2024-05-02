@@ -13,7 +13,7 @@ namespace proyecto1_ds6
         {
             InitializeComponent();
             InitializeDatabase();
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new PlantillaPage());
         }
 
         private void InitializeDatabase()
