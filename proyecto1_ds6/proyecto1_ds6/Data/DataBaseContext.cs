@@ -32,5 +32,10 @@ namespace proyecto1_ds6.Data
         {
             return await Connection.Table<Item>().ToListAsync();
         }
+
+        public async Task<int> DeleteItemAsync(Item iten)
+        {
+            return await Connection.DeleteAsync(iten);
+        }
     }
 }
