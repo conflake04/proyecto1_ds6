@@ -1,37 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="proyecto1_ds6.View.ListaEmpPage">
+             x:Class="proyecto1_ds6.View.ListaEmpPage"
+			 Title="Lista de Empleados">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"/>
-    </ContentPage.ToolbarItems>
+	
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="BtnAgregar" Text="Agregar" Clicked="BtnAgregar_Clicked"/>
+	</ContentPage.ToolbarItems>
 
-    <CollectionView x:Name="ItemsListView"
-        ItemsSource="{Binding Items}"
-        SelectionMode="None">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout Padding="10" x:DataType="model:Item">
-                    <Label Text="{Binding Text}" 
-                    LineBreakMode="NoWrap" 
-                    Style="{DynamicResource ListItemTextStyle}" 
-                    FontSize="16" 
-                    TextColor="Black"   />
-                    <Label Text="{Binding Description}" 
-                    LineBreakMode="NoWrap"
-                    Style="{DynamicResource ListItemDetailTextStyle}"
-                    FontSize="13" 
-                       TextColor="Black"/>
-                    <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer 
-                        NumberOfTapsRequired="1"
-                        Command="{Binding Source={RelativeSource AncestorType={x:Type local:ItemsViewModel}}, Path=ItemTapped}"		
-                        CommandParameter="{Binding .}">
-                        </TapGestureRecognizer>
-                    </StackLayout.GestureRecognizers>
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+	<ContentPage.Content>
+		<ListView x:Name="lista_empleados" HasUnevenRows="True" BackgroundColor="White">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Padding="15,40" >
+							<Label Text="{Binding nombre}" TextColor="black"></Label>
+							<Label Text="{Binding cedula}"></Label>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
 </ContentPage>

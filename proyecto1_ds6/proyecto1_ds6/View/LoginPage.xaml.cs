@@ -17,9 +17,9 @@ namespace proyecto1_ds6.View
             InitializeComponent();
         }
 
-        private void btn1_Clicked(object sender, EventArgs e)
+        private async void btn1_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ListaEmpPage());
         }
     }
 }
