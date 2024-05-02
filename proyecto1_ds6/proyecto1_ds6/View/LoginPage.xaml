@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:EmbeddedImagesSample"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#003C43"
              x:Class="proyecto1_ds6.View.LoginPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
+        <StackLayout Padding="20,50,20,0" VerticalOptions="Center">
+         <Image Source="logo.png" />
+       </StackLayout>
+   
 </ContentPage>
