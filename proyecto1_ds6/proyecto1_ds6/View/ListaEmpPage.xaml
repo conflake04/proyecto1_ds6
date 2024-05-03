@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto1_ds6.View.ListaEmpPage"
-			 Title="Lista de Empleados" TranslationX="-5">
+             BackgroundColor="#003C43"
+			 Title="Lista de Empleados" >
 
    
 
@@ -10,19 +11,28 @@
         <ToolbarItem x:Name="BtnAgregar"  Text="Agregar"  Clicked="BtnAgregar_Clicked"  />
 	</ContentPage.ToolbarItems>
 
-    <ContentPage.Content>
-        <ListView x:Name="lista_empleados" HasUnevenRows="True"  ItemSelected="lista_empleados_ItemSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="15,17"  BackgroundColor="#A09F9F" HeightRequest="46" Margin="0,3">
-                            <Label Text="{Binding nombre}" TextColor="black" FontSize="Medium"></Label>
-                            <Label Text="{Binding cedula}" TextColor="Black" FontSize="Medium"></Label>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </ContentPage.Content>
+    <StackLayout Padding="0,10,0,40" VerticalOptions="Start">
+        
+        <Frame HasShadow="False" WidthRequest="498" HeightRequest="607" BackgroundColor="#fff " >
+
+            <StackLayout BackgroundColor="#D9D9D9" HeightRequest="648" Padding="15" >
+                <ListView x:Name="lista_empleados" HasUnevenRows="True"  ItemSelected="lista_empleados_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell >
+                                <StackLayout Padding="15,15 "    BackgroundColor="#FBF8F8" HeightRequest="46" >
+                                    <Label Text="{Binding nombre}" TextColor="black" FontSize="Medium" FontAttributes="Bold"></Label>
+                                    <Label Text="{Binding cedula}" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+
+
+    </StackLayout>
+   
 
 </ContentPage>

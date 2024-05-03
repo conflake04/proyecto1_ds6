@@ -14,13 +14,22 @@
         
         <Frame HasShadow="False" WidthRequest="498" HeightRequest="607" BackgroundColor="#fff " >
 
-            <StackLayout BackgroundColor="#D9D9D9" Margin="0,0,0,275"  Padding="10" TranslationY="120" >
+            <StackLayout BackgroundColor="#D9D9D9" Margin="0,0,0,255"  Padding="10" TranslationY="120" >
+                
                 <Label Text="Nombre" FontSize="20" FontAttributes="Bold" TextColor="#003C43" TranslationX="2" TranslationY="15"></Label>
-                <Entry x:Name="nombreEntry" BackgroundColor="#fff" TranslationY="15" />
+                <Frame BorderColor="#003C43"    Padding="6" TranslationY="15">
+                    <Entry x:Name="nombreEntry" BackgroundColor="#fff" TranslationY="4"  />
+                </Frame>
                 <Label Text="Cedula" FontSize="20" TextColor="#003C43" FontAttributes="Bold" TranslationX="2" TranslationY="25"></Label>
-                <Entry x:Name="cedulaEntry" BackgroundColor="#fff" TranslationY="25"/>
+                <Frame BorderColor="#003C43"    Padding="6" TranslationY="25">
+                    <Entry x:Name="cedulaEntry" BackgroundColor="#fff" TranslationY="4"/>
+                </Frame>
+                
                 <Label Text="Salario" FontSize="20" TextColor="#003C43" FontAttributes="Bold" TranslationX="2" TranslationY="30" ></Label>
-                <Entry x:Name="salarioEntry" BackgroundColor="#fff" TranslationY="30"/>
+                <Frame BorderColor="#003C43"    Padding="6" TranslationY="30">
+                    <Entry x:Name="salarioEntry" BackgroundColor="#fff" TranslationY="4"/>
+                </Frame>
+                
             </StackLayout>
         </Frame>
 

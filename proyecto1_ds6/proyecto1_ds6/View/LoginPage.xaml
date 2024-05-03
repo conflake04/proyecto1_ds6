@@ -14,9 +14,14 @@
             <StackLayout  >
                 <Label Text="Bienvenido a Bluet" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold" TextColor="#000" />
                 <StackLayout Padding="20,50,20,0" >
-
-                    <Entry Placeholder="Correo" BackgroundColor="#D9D9D9" PlaceholderColor="#003C43"   />
-                    <Entry Placeholder="Contraseña" BackgroundColor="#D9D9D9" TranslationY="30" IsPassword="True" PlaceholderColor="#003C43"  />
+                    <Frame BorderColor="#003C43"    Padding="6" >
+                        <Entry Placeholder="Correo"  BackgroundColor="#fff" PlaceholderColor="#003C43" />
+                    </Frame>
+                    
+                    <Frame BorderColor="#003C43"   Padding="5" TranslationY="20">
+                        <Entry Placeholder="Contraseña" BackgroundColor="#fff"  IsPassword="True" PlaceholderColor="#003C43"  />
+                    </Frame>
+                    
                 </StackLayout>
                 <Button x:Name="btn1"  Text="Login" TextColor="#94FFD8" FontSize="15" FontAttributes="Bold" BackgroundColor="#003C43" CornerRadius="34" WidthRequest="172" HeightRequest="50" TranslationY="70" Clicked="btn1_Clicked"/>
 
