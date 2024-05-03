@@ -30,10 +30,11 @@
                 <Label x:Name="salario_neto" Text="" TextColor="#000" FontSize="17" TranslationY="15" TranslationX="15" FontAttributes="Bold"/>
                 <Label Text="Decimo tercer mes" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15"  TranslationY="15"/>
                 <Label x:Name="decimo" Text="" TextColor="#000" FontSize="17" TranslationY="15" TranslationX="15" FontAttributes="Bold"/>
-                <Button x:Name="btn2" Text="Calcular" BackgroundColor="#003C43" TextColor="#94FFD8" FontAttributes="Bold" CornerRadius="34" Clicked="btn2_Clicked" />
-                <Button x:Name="btn3" Text="Calcular Decimo" BackgroundColor="#003C43" TextColor="#94FFD8" FontAttributes="Bold" CornerRadius="34" Clicked="btn3_Clicked" />
+                <Button x:Name="btn2" Text="Calcular" BackgroundColor="#003C43" TextColor="#94FFD8" FontAttributes="Bold" CornerRadius="34" Clicked="btn2_Clicked" TranslationY="30" />
+                <Button  x:Name="btn3" Text="Calcular Decimo" BackgroundColor="#003C43" TextColor="#94FFD8" FontAttributes="Bold" CornerRadius="34" Clicked="btn3_Clicked" TranslationY="32"   />
             </StackLayout>
         </Frame>
+      
 
     </StackLayout>
 
