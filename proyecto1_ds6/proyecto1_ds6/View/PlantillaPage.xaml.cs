@@ -55,7 +55,18 @@ namespace proyecto1_ds6.View
 
         private void btn3_Clicked(object sender, EventArgs e)
         {
-
+            if (double.TryParse(salario_e.Text, out double salario))
+            {
+                double decimoM = (salario * 4) / 12;
+                double deduccionSegSocial = salario * 0.0975;
+                decimoM = salario - deduccionSegSocial;
+                decimo.Text = decimoM.ToString();
+            }
+            else
+            {
+                DisplayAlert("Error", "Por favor ingrese un valor válido para el salario.", "OK");
+            }
         }
+
     }
 }
