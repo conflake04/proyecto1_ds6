@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto1_ds6.View.ListaEmpPage"
-			 Title="Lista de Empleados" BackgroundColor="#003C43">
+			 Title="Lista de Empleados" BackgroundColor="#B1B1B1">
 
 
     <ContentPage.ToolbarItems>
@@ -14,7 +14,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="15,40"  BackgroundColor="#B1B1B1" HeightRequest="46">
+                        <StackLayout Padding="15,17"  BackgroundColor="#A09F9F" HeightRequest="46" Margin="0,3">
                             <Label Text="{Binding nombre}" TextColor="black" FontSize="Medium"></Label>
                             <Label Text="{Binding cedula}" TextColor="Black" FontSize="Medium"></Label>
                         </StackLayout>
