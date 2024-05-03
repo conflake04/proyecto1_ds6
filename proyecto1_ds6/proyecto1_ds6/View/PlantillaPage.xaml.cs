@@ -18,8 +18,15 @@ namespace proyecto1_ds6.View
         {
             InitializeComponent();
             this.item = item;
-            DetallesE.ItemsSourc = item;
+
+            nombre_e.Text = item.nombre;
+            cedula_e.Text = item.cedula;
+            salario_e.Text = item.salario.ToString();
+            seg_social.Text = item.seg_social;
+            seg_educ.Text = item.seg_educ;
+            
         }
+
 
     }
 }

@@ -17,9 +17,19 @@
             <StackLayout BackgroundColor="#D9D9D9" HeightRequest="648" >
                 <Label Text="Planilla" TextColor="#003C43" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TranslationY="15"/>
                 <Label Text="Nombre del trabajador:" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15" TranslationY="15"/>
+                <Label x:Name="nombre_e" Text=""/>
                 <Label Text="Cedula:" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15"  TranslationY="15"/>
+                <Label x:Name="cedula_e" Text=""/>
                 <Label Text="Salario neto$:" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15" TranslationY="15"/>
-                <Entry Placeholder=" " />
+                <Label x:Name="salario_e" Text=""/>
+
+                <Label x:Name="seg_social" Text=""/>
+
+                <Label x:Name="seg_educ" Text=""/>
+
+                <Label x:Name="salario_neto" Text=""/>
+
+                <Label x:Name="decimo" Text=""/>
             </StackLayout>
         </Frame>
 
