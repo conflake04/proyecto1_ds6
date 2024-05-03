@@ -25,12 +25,33 @@ namespace proyecto1_ds6.View
             seg_social.Text = item.seg_social;
             seg_educ.Text = item.seg_educ;
             
+
+
         }
 
         private void btn2_Clicked(object sender, EventArgs e)
         {
+            
+            if (double.TryParse(salario_e.Text, out double salario))
+            {
+                
+                double deduccionSegSocial = salario * 0.0975;
+                double deduccionSegEducativo = salario * 0.0125;
 
+                
+                double salarioNeto = salario - (deduccionSegSocial + deduccionSegEducativo);
+
+                
+                seg_social.Text = deduccionSegSocial.ToString();
+                seg_educ.Text = deduccionSegEducativo.ToString();
+                salario_neto.Text = salarioNeto.ToString();
+            }
+            else
+            {
+                DisplayAlert("Error", "Por favor ingrese un valor válido para el salario.", "OK");
+            }
         }
+
 
         private void btn3_Clicked(object sender, EventArgs e)
         {
