@@ -43,5 +43,7 @@ namespace proyecto1_ds6.View
             Item selectionItem = e.SelectedItem as Item;
             await Navigation.PushAsync(new PlantillaPage(selectionItem));
         }
+
     }
+   
 }

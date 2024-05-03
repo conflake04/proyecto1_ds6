@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto1_ds6.View.ListaEmpPage"
-			 Title="Lista de Empleados">
+			 Title="Lista de Empleados" TranslationX="-5">
 
-	
-	<ContentPage.ToolbarItems>
-		<ToolbarItem x:Name="BtnAgregar" Text="Agregar" Clicked="BtnAgregar_Clicked"/>
+   
+
+    <ContentPage.ToolbarItems >
+        <ToolbarItem x:Name="BtnAgregar"  Text="Agregar"  Clicked="BtnAgregar_Clicked"  />
 	</ContentPage.ToolbarItems>
 
 	<ContentPage.Content>
