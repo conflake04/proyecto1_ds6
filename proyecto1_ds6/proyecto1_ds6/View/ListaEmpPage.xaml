@@ -2,25 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto1_ds6.View.ListaEmpPage"
-			 Title="Lista de Empleados">
+			 Title="Lista de Empleados" BackgroundColor="#003C43">
 
 	
 	<ContentPage.ToolbarItems>
 		<ToolbarItem x:Name="BtnAgregar" Text="Agregar" Clicked="BtnAgregar_Clicked"/>
 	</ContentPage.ToolbarItems>
 
-	<ContentPage.Content>
-		<ListView x:Name="lista_empleados" HasUnevenRows="True" BackgroundColor="White" ItemSelected="lista_empleados_ItemSelected">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						<StackLayout Padding="15,40" >
-							<Label Text="{Binding nombre}" TextColor="black"></Label>
-                            <Label Text="{Binding cedula}" TextColor="Black"></Label>
+    <ContentPage.Content>
+        <ListView x:Name="lista_empleados" HasUnevenRows="True"  ItemSelected="lista_empleados_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+						<StackLayout Padding="15,40"  BackgroundColor="White" HeightRequest="46">
+							<Label Text="{Binding nombre}" TextColor="black" FontSize="Medium"></Label>
+                            <Label Text="{Binding cedula}" TextColor="Black" FontSize="Medium"></Label>
                         </StackLayout>
 					</ViewCell>
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
 	</ContentPage.Content>
+
 </ContentPage>
