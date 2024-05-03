@@ -13,14 +13,13 @@ namespace proyecto1_ds6.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlantillaPage : ContentPage
     {
-        public PlantillaPage()
+        Item item;
+        public PlantillaPage(Item item)
         {
             InitializeComponent();
+            this.item = item;
+            DetallesE.ItemsSourc = item;
         }
 
-       public void Item Gt(Item item)
-        {
-
-        }
     }
 }

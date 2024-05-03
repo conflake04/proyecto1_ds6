@@ -16,8 +16,8 @@
 					<ViewCell>
 						<StackLayout Padding="15,40" >
 							<Label Text="{Binding nombre}" TextColor="black"></Label>
-							<Label Text="{Binding cedula}"></Label>
-						</StackLayout>
+                            <Label Text="{Binding cedula}" TextColor="Black"></Label>
+                        </StackLayout>
 					</ViewCell>
 				</DataTemplate>
 			</ListView.ItemTemplate>

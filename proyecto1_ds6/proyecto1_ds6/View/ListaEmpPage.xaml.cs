@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using proyecto1_ds6.Models;
+using proyecto1_ds6.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +13,7 @@ namespace proyecto1_ds6.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListaEmpPage : ContentPage
     {
-        public IList<Item> Items { get; set; }
+        
         public object DataStore { get; private set; }
 
         public ListaEmpPage()
@@ -38,9 +39,9 @@ namespace proyecto1_ds6.View
 
         private async void lista_empleados_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            
             Item selectionItem = e.SelectedItem as Item;
-            await Navigation.PushAsync(new PlantillaPage());
-
+            await Navigation.PushAsync(new PlantillaPage(selectionItem));
         }
     }
 }
