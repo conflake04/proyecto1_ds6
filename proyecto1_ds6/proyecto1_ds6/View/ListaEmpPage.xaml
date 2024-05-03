@@ -10,18 +10,19 @@
         <ToolbarItem x:Name="BtnAgregar"  Text="Agregar"  Clicked="BtnAgregar_Clicked"  />
 	</ContentPage.ToolbarItems>
 
-	<ContentPage.Content>
-		<ListView x:Name="lista_empleados" HasUnevenRows="True" BackgroundColor="White" ItemSelected="lista_empleados_ItemSelected">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						<StackLayout Padding="15,40" >
-							<Label Text="{Binding nombre}" TextColor="black"></Label>
-                            <Label Text="{Binding cedula}" TextColor="Black"></Label>
+    <ContentPage.Content>
+        <ListView x:Name="lista_empleados" HasUnevenRows="True"  ItemSelected="lista_empleados_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="15,17"  BackgroundColor="#A09F9F" HeightRequest="46" Margin="0,3">
+                            <Label Text="{Binding nombre}" TextColor="black" FontSize="Medium"></Label>
+                            <Label Text="{Binding cedula}" TextColor="Black" FontSize="Medium"></Label>
                         </StackLayout>
-					</ViewCell>
-				</DataTemplate>
-			</ListView.ItemTemplate>
-		</ListView>
-	</ContentPage.Content>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
 </ContentPage>
