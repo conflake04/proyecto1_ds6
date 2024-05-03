@@ -27,6 +27,14 @@ namespace proyecto1_ds6.View
             
         }
 
+        private void btn2_Clicked(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btn3_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
