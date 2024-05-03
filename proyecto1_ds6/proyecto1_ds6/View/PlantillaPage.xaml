@@ -1,23 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              BackgroundColor="#003C43"
-             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasNavigationBar="False" 
              x:Class="proyecto1_ds6.View.PlantillaPage">
 
 
-    <ContentPage.Content>
-        <ListView x:Name="DetallesE" HasUnevenRows="True" BackgroundColor="White" ItemSelected="lista_empleados_ItemSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="15,40" >
-                            <Label Text="{Binding nombre}" TextColor="black"></Label>
-                            <Label Text="{Binding cedula}" TextColor="Black"></Label>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </ContentPage.Content>
+
+
+
+    <StackLayout Padding="0,10,0,40" VerticalOptions="Start">
+        <Image Source="logo2.png" WidthRequest="49" HeightRequest="53" TranslationY="-2" TranslationX="-150"/>
+        <Frame HasShadow="False" WidthRequest="498" HeightRequest="607" BackgroundColor="#fff " >
+
+            <StackLayout BackgroundColor="#D9D9D9" HeightRequest="648" >
+                <Label Text="Planilla" TextColor="#003C43" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TranslationY="15"/>
+                <Label Text="Nombre del trabajador:" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15" TranslationY="15"/>
+                <Label Text="Cedula:" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15"  TranslationY="15"/>
+                <Label Text="Salario neto$:" TextColor="#003C43" FontSize="20" FontAttributes="Bold" TranslationX="15" TranslationY="15"/>
+                <Entry Placeholder=" " />
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+
+
 </ContentPage>
