@@ -10,7 +10,7 @@
 	</ContentPage.ToolbarItems>
 
 	<ContentPage.Content>
-		<ListView x:Name="lista_empleados" HasUnevenRows="True" BackgroundColor="White">
+		<ListView x:Name="lista_empleados" HasUnevenRows="True" BackgroundColor="White" ItemSelected="lista_empleados_ItemSelected">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
