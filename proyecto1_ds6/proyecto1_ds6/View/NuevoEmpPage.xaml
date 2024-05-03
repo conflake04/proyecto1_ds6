@@ -9,13 +9,13 @@
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
-        <StackLayout Padding="15">
-            <Label Text="Nombre" FontSize="Medium" TextColor="Black"></Label>
-            <Entry x:Name="nombreEntry"/>
-            <Label Text="Cedula" FontSize="Medium" TextColor="Black"></Label>
-            <Entry x:Name="cedulaEntry"/>
-            <Label Text="Salario" FontSize="Medium" TextColor="Black"></Label>
-            <Entry x:Name="salarioEntry"/>
+        <StackLayout Padding="15,70" BackgroundColor="#B1B1B1">
+            <Label Text="Nombre" TextColor="#003C43" FontSize="20" FontAttributes="Bold"></Label>
+            <Entry x:Name="nombreEntry" FontSize="Medium" TextColor="Black"/>
+            <Label Text="Cedula" TextColor="#003C43" FontSize="20" FontAttributes="Bold"></Label>
+            <Entry x:Name="cedulaEntry" FontSize="Medium" TextColor="Black"/>
+            <Label Text="Salario" TextColor="#003C43" FontSize="20" FontAttributes="Bold"></Label>
+            <Entry x:Name="salarioEntry" FontSize="Medium" TextColor="Black"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
