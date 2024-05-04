@@ -18,16 +18,16 @@
                 
                 <Label Text="Nombre" FontSize="20" FontAttributes="Bold" TextColor="#003C43" TranslationX="2" TranslationY="15"></Label>
                 <Frame BorderColor="#003C43"    Padding="6" TranslationY="15">
-                    <Entry x:Name="nombreEntry" BackgroundColor="#fff" TranslationY="4"  />
+                    <Entry x:Name="nombreEntry" BackgroundColor="#fff" TranslationY="4"  TextColor="#000"/>
                 </Frame>
                 <Label Text="Cedula" FontSize="20" TextColor="#003C43" FontAttributes="Bold" TranslationX="2" TranslationY="25"></Label>
                 <Frame BorderColor="#003C43"    Padding="6" TranslationY="25">
-                    <Entry x:Name="cedulaEntry" BackgroundColor="#fff" TranslationY="4"/>
+                    <Entry x:Name="cedulaEntry" BackgroundColor="#fff" TranslationY="4" TextColor="#000"/>
                 </Frame>
                 
                 <Label Text="Salario" FontSize="20" TextColor="#003C43" FontAttributes="Bold" TranslationX="2" TranslationY="30" ></Label>
                 <Frame BorderColor="#003C43"    Padding="6" TranslationY="30">
-                    <Entry x:Name="salarioEntry" BackgroundColor="#fff" TranslationY="4"/>
+                    <Entry x:Name="salarioEntry" BackgroundColor="#fff" TranslationY="4" TextColor="#000"/>
                 </Frame>
                 
             </StackLayout>
