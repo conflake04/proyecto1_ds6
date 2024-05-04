@@ -28,7 +28,7 @@ namespace proyecto1_ds6.View
 					nombre = nombreEntry.Text,
 					cedula = cedulaEntry.Text,
 					seg_social = "9.75%",
-					seg_educ = "1.25",
+					seg_educ = "1.25%",
 					salario = Convert.ToDouble(salarioEntry.Text),
 					decTerMes = 0
 				};
