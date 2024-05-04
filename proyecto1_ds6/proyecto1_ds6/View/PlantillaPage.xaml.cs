@@ -59,8 +59,9 @@ namespace proyecto1_ds6.View
             {
                 double decimoM = (item.salario * 4) / 12;
                 double deduccionSegSocial = item.salario * 0.0725;
-                decimoM = decimoM - deduccionSegSocial;
+                decimoM -= deduccionSegSocial;
                 decimo.Text = decimoM.ToString();
+
             }
             else
             {
